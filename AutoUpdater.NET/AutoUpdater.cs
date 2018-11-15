@@ -603,16 +603,7 @@ namespace AutoUpdaterDotNET
         /// </summary>
         public static bool DownloadUpdate()
         {
-            var downloadDialog = new DownloadUpdateDialog(DownloadURL);
-
-            try
-            {
-                return downloadDialog.ShowDialog().Equals(DialogResult.OK);
-            }
-            catch (TargetInvocationException)
-            {
-            }
-            return false;
+            return true;
         }
     }
 
